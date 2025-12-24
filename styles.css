@@ -1,0 +1,241 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f3f3;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Enlace accesible de salto */
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
+.sr-only:focus {
+  left: 0;
+  top: 0;
+  background: white;
+  padding: 0.5rem;
+  z-index: 999;
+}
+
+/* ===== HEADER CON DEGRADADO ===== */
+header {
+  background: linear-gradient(135deg, #003366, #1a73e8);
+  color: white;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 1rem 0;
+}
+
+/* ===== NAV ===== */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MAIN ===== */
+/* margen superior para que el header no “pise” el contenido */
+main {
+  margin-top: 1.5rem;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+/* ===== SECCIONES ===== */
+section {
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  border-bottom: 2px solid #003366;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  color: #003366;
+}
+
+/* Enlace al CV */
+.cv-enlace {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.cv-enlace a {
+  color: #003366;
+  text-decoration: underline;
+}
+
+.cv-enlace a:hover {
+  color: #1a73e8;
+}
+/* ===== FIGURE ===== */
+figure {
+  display: block;
+  margin: 0 0 1rem 0;
+  text-align: center; /* opcional: centra pie e imagen */
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+/* ===== ARTÍCULOS ===== */
+article {
+  border-left: 4px solid #003366;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== LISTAS ===== */
+ul {
+  padding-left: 1.2rem;
+}
+
+/* ===== FORMULARIO ===== */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+fieldset div {
+  margin-bottom: 0.8rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #003366;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a73e8;
+}
+
+/* ===== CERTIFICACIONES ===== */
+.certificacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cert-info {
+  flex: 1;
+}
+
+.cert-badges {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cert-badges img {
+  height: 70px;
+  width: auto;
+  border-radius: 6px;
+}
+
+/* ===== CERTIFICACIÓN VERTICAL (IT Specialist) ===== */
+.cert-vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cert-vertical .cert-badges {
+  margin-top: 1rem;
+}
+
+.cert-vertical .cert-badges img {
+  height: 105px; /* más grande que la otra */
+}
+
+.cert-vertical .cert-badges {
+  margin-top: 0rem; /* antes estaba en 1rem */
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== TÍTULOS DE PROYECTOS EN BLANCO ===== */
+#proyectos h3 {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.3rem 0.5rem;
+  display: inline-block;
+  border-radius: 4px;
+}
