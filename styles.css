@@ -186,6 +186,12 @@ button:hover {
   border-radius: 6px;
 }
 
+.cert-badges1 img {
+  height: 75px;
+  width: auto;
+  border-radius: 6px;
+}
+
 /* ===== CERTIFICACIÓN VERTICAL (IT Specialist) ===== */
 .cert-vertical {
   flex-direction: column;
