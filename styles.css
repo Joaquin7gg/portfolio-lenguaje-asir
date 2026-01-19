@@ -1,247 +1,231 @@
-/* ===== RESET ===== */
-* {
-  box-sizing: border-box;
+/* ===== BASE ===== */
+*{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+body{
   margin: 0;
   background-color: #f3f3f3;
   color: #222;
   line-height: 1.6;
 }
 
-/* Enlace accesible de salto */
-.sr-only {
+/* ===== SKIP LINK ===== */
+.sr-only{
   position: absolute;
   left: -9999px;
 }
 
-.sr-only:focus {
+.sr-only:focus{
   left: 0;
   top: 0;
-  background: white;
-  padding: 0.5rem;
-  z-index: 999;
+  background-color: white;
+  padding: 8px;
 }
 
-/* ===== HEADER CON DEGRADADO ===== */
-header {
-  background: linear-gradient(135deg, #003366, #1a73e8);
+/* ===== HEADER + NAV ===== */
+header{
+
+  background-image: linear-gradient(135deg, #003366, #1a73e8);
   color: white;
-  padding: 1rem 1rem;
+  padding: 16px;
+  text-align: center; 
+}
+
+header h1{
+  margin: 0 0 10px 0;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-header h1 {
-  margin: 0 0 1rem 0;
+nav ul li{
+  display: inline;   
+  margin: 0 10px;
 }
 
-/* ===== NAV ===== */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-nav a {
+nav a{
   color: white;
-  text-decoration: none;
+  text-decoration: none; 
   font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover{
   text-decoration: underline;
 }
 
 /* ===== MAIN ===== */
-/* margen superior para que el header no “pise” el contenido */
-main {
-  margin-top: 1.5rem;
+main{
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
+  margin: 20px auto;  
+  padding: 0 16px;
 }
 
-/* ===== SECCIONES ===== */
-section {
-  background: white;
-  padding: 1.5rem;
+/* ===== SECTIONS ===== */
+section{
+  background-color: white;
   border: 1px solid #ddd;
-  margin-bottom: 1.5rem;
+  padding: 16px;
+  margin: 0 0 16px 0;
 }
 
-h2 {
+#sobre-mi{text-align: justify;}
+#proyectos{text-align: justify;}
+
+h2{
   border-bottom: 2px solid #003366;
-  padding-bottom: 0.3rem;
+  padding-bottom: 6px;
 }
 
-h3 {
+h3{
   color: #003366;
 }
 
-/* Enlace al CV */
-.cv-enlace {
-  margin-top: 1rem;
+/* ===== FIGURE ===== */
+figure{
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+figure img{
+  max-width: 100%;
+  border-radius: 8px; 
+}
+
+figure figcaption{
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* ===== ARTICLES ===== */
+article{
+  border-left: 4px solid #003366; 
+  padding-left: 12px;
+  margin-bottom: 16px;
+}
+
+/* ===== LISTS ===== */
+ul{
+  padding-left: 20px;
+}
+
+/* ===== CV LINK ===== */
+.cv-enlace{
+  margin-top: 16px;
   font-weight: bold;
 }
 
-.cv-enlace a {
+.cv-enlace a{
   color: #003366;
   text-decoration: underline;
 }
 
-.cv-enlace a:hover {
+.cv-enlace a:hover{
   color: #1a73e8;
 }
-/* ===== FIGURE ===== */
-figure {
-  display: block;
-  margin: 0 0 1rem 0;
-  text-align: center; /* opcional: centra pie e imagen */
-}
 
-figure img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-figure figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #444;
-}
-/* ===== ARTÍCULOS ===== */
-article {
-  border-left: 4px solid #003366;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* ===== LISTAS ===== */
-ul {
-  padding-left: 1.2rem;
-}
-
-/* ===== FORMULARIO ===== */
-fieldset {
+/* ===== FORM ===== */
+fieldset{
   border: 1px solid #ccc;
-  padding: 1rem;
+  padding: 16px;
 }
 
-fieldset div {
-  margin-bottom: 0.8rem;
+fieldset div{
+  margin-bottom: 12px;
 }
 
-label {
-  display: block;
-  margin-bottom: 0.2rem;
+label{
+  display: block; 
+  margin-bottom: 4px;
 }
 
 input,
-textarea {
+textarea{
   width: 100%;
-  padding: 0.4rem;
+  padding: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button {
-  background: #003366;
+button{
+  background-color: #003366;
   color: white;
-  padding: 0.6rem 1rem;
+  padding: 10px 16px;
   border: none;
   cursor: pointer;
 }
 
-button:hover {
-  background: #1a73e8;
+button:hover{
+  background-color: #1a73e8;
 }
 
 /* ===== CERTIFICACIONES ===== */
-.certificacion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+.certificacion{
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 16px;
 }
 
-.cert-info {
-  flex: 1;
+.cert-badges,
+.cert-badges1{
+  text-align: center;
+  margin-top: 10px;
 }
 
-.cert-badges {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.cert-badges img {
+.cert-badges img,
+.cert-badges1 img{
+  display: inline;    
   height: 70px;
-  width: auto;
   border-radius: 6px;
 }
 
-.cert-badges1 img {
+.cert-badges1 img{
   height: 75px;
-  width: auto;
-  border-radius: 6px;
 }
 
-/* ===== CERTIFICACIÓN VERTICAL (IT Specialist) ===== */
-.cert-vertical {
-  flex-direction: column;
-  align-items: flex-start;
+.cert-vertical .cert-badges img{
+  height: 105px;
 }
-
-.cert-vertical .cert-badges {
-  margin-top: 1rem;
-}
-
-.cert-vertical .cert-badges img {
-  height: 105px; /* más grande que la otra */
-}
-
-.cert-vertical .cert-badges {
-  margin-top: 0rem; /* antes estaba en 1rem */
-}
-
 
 /* ===== FOOTER ===== */
-footer {
-  background: #222;
+footer{
+  background-color: #222;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 16px;
 }
 
-footer ul {
+footer ul{
   list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  margin: 8px 0 0 0;
   padding: 0;
-  margin: 0.5rem 0 0 0;
+  text-align: center;
 }
 
-footer a {
+footer ul li{
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a{
   color: white;
   text-decoration: none;
 }
 
-footer a:hover {
+footer a:hover{
   text-decoration: underline;
 }
 
-/* ===== TÍTULOS DE PROYECTOS EN BLANCO ===== */
-#proyectos h3 {
+/* ===== PROYECTOS ===== */
+#proyectos h3{
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0.3rem 0.5rem;
-  display: inline-block;
-  border-radius: 4px;
+  background-color: rgb(0, 0, 0); 
+  padding: 5px 8px;
+  display: inline;
 }
+
